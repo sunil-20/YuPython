@@ -1,0 +1,1 @@
+# This folder contains day 1 documents and codes.
