@@ -3,15 +3,16 @@
 
 -logical operation scheme:
 
-if condition:
-    do this
-else:
-    do this
-* Comparision operators
- > Greater than
- < Less than
- >= Greater than and equalto
- <= Less than and equalto
- == equal to
- != not equal to
+<div> if condition:<br>
+        do this<br>
+else:<br>
+        do this<br>
+* Comparision operators<br>
+ <p> > Greater than</p><br>
+ < Less than<br>
+ >= Greater than and equalto<br>
+ <= Less than and equalto<br>
+ == equal to<br>
+ != not equal to<br>
  
+</div>
