@@ -8,7 +8,7 @@
 else:<br>
         do this<br>
 * Comparision operators<br>
- <p> > Greater than</p><br>
+ > Greater than<br>
  < Less than<br>
  >= Greater than and equalto<br>
  <= Less than and equalto<br>
