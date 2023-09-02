@@ -25,6 +25,11 @@ if condition:
 else:
   do this
  
+ # Logical Operators<br>
+ A and B (both is True) <br>
+ C or D  (either one is True)<br>
+ not E (Reverse the condition, True>>False, False>>True)<br>
+
 </div>
 
 
