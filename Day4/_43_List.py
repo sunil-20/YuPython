@@ -24,4 +24,6 @@ states_of_america.remove("SKLand")
 print(states_of_america)
 
 print(states_of_america[-1])
+# adding more items in the list
+states_of_america.extend(["SKLand", "LuxLand","SejLand"])
 print(states_of_america)
