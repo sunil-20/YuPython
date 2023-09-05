@@ -1,4 +1,4 @@
-# def turn_right():
+"""# def turn_right():
     for x in range(3):
         turn_left()
     #move()
@@ -18,4 +18,4 @@ while not at_goal():
         move()
     else:
         turn_left()
-    
+    """
