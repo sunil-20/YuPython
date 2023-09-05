@@ -6,7 +6,7 @@ for number in range(1,101):
         total+= number
 print(total)
 
-# way 2 without adding even 1 to 100
+# way 2 adding even 1 to 100
 total2 = 0
 for number2 in range (2, 101, 2):
     total2 += number2
