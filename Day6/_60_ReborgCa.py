@@ -1,8 +1,9 @@
+# from the reborg python game web
 #reborg.ca
 def turn_right():
-    turn_left()
-    turn_left()
-    turn_left()
+    for x in range(3):
+        turn_left()
+
 def u_turn():
     move()
     turn_left()
