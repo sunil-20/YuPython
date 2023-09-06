@@ -6,7 +6,7 @@ print(stages.logo)
 chosen_word = random.choice(hangman_words.word_list)
 word_length = len(chosen_word)
 lives = 6
-# print(chosen_word)
+#print(chosen_word)
 # create blank list
 display = []
 for l in range(word_length):
@@ -24,7 +24,7 @@ while not end_of_game:
         print(f"Lives remaining: {lives}")
         if lives<1:
             end_of_game = True
-            print("You lose.")
+            print("You lose!")
             print(f"The word was: {chosen_word}")
 
     # print the word after joining from the list
@@ -32,6 +32,6 @@ while not end_of_game:
 
     if "_" not in display:
         end_of_game = True
-        print("You win")
+        print("You win!")
         print(f"The word was: {''.join(display)}")
     print(stages.stages_fig[lives])
