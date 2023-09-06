@@ -6,3 +6,5 @@
 * Strings
 * Range
 * Modules
+# link to list
+# https://developers.google.com/edu/python/lists#for-and-in
