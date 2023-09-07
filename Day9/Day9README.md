@@ -49,6 +49,9 @@ if 'name' in my_dict:
 # Iterating through keys
 for key in my_dict:
     print(key, my_dict[key])
+# Print only the values
+for value in my_dict.values():
+    print(value)
 ```
 
 Dictionaries are widely used in Python for tasks such as data storage, configuration settings, and efficient data retrieval based on keys. They provide a convenient and flexible way to organize and access data in your Python programs.
