@@ -1,19 +1,20 @@
 # Caesar Cipher Encryption 1
-alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n',
+             'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z','a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n',
+             'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
 
 direction = input("Type 'encode' to encrypt, type 'decode' to decrypt:\n")
 text = input("Type your message:\n").lower()
 shift = int(input("Type the shift number:\n"))
 
-def encrypt(text, shift, direction):
-    message_after_encrypt = ""
+def caesar(text, shift, direction):
+    end_text = ""
     for i in text:
+        letter_location = alphabet.index(i)
         if direction == "encode":
-            letter_location = alphabet.index(i)
-            message_after_encrypt += alphabet[letter_location + shift]
+            end_text += alphabet[letter_location + shift]
         else:
-            letter_location = letter_location = alphabet.index(i)
-            message_after_encrypt += alphabet[letter_location - shift]
-    print(message_after_encrypt)
+            end_text += alphabet[letter_location - shift]
+    print(end_text)
 
-encrypt(text= text, shift=shift, direction = direction)
+caesar(text= text, shift=shift, direction = direction)
