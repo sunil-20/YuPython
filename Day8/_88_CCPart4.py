@@ -14,20 +14,23 @@ while not should_end:
     shift = int(input("Type the shift number:\n"))
 
     def caesar(text, shift, direction):
-        end_text = ""
-        for i in text:
-            letter_location = alphabet.index(i)
-            if direction == "encode":
-                end_text += alphabet[letter_location + shift]
+        end_text = ""      
+        for char in text:
+            if char in alphabet:
+                letter_location = alphabet.index(char)
+                if direction == "encode":
+                    end_text += alphabet[letter_location + shift]
+                else:
+                    end_text += alphabet[letter_location - shift]
             else:
-                end_text += alphabet[letter_location - shift]
+                end_text += char
         if direction == "encode":
             print(f"Here is the encoded message: {end_text}")
         else:
             print(f"Here is the decoded message: {end_text}")
 
     caesar(text= text, shift=shift, direction = direction)
-    restart = input("Do you want to  start new encryption? Yes or No").lower()
+    restart = input("Do you want to  start new encryption? Yes or No\n").lower()
     if restart == 'no':
         should_end = True
-
+        print("Have a nice day!")
