@@ -2,7 +2,7 @@
 * Dictionary consists of key, value pairs in curly braces.
 Dictionaries in Python are unordered collections of key-value pairs. They are a fundamental data structure in Python and are also known as associative arrays, hash maps, or hash tables in other programming languages. Here are some key points to understand about Python dictionaries:
 
-1. **Key-Value Pairs:** Each element in a dictionary is a key-value pair. The key is a unique identifier for a specific value in the dictionary.
+1. **Key-Value Pairs:** Each element in a dictionary is a key-value pair. The key is a unique identifier for a specific value in the dictionary. {Key: Value}
 
 2. **Unordered:** Dictionaries are unordered, which means the order of elements is not guaranteed. In Python 3.7 and later versions, dictionaries maintain the insertion order, meaning that elements are stored in the order they were added. In Python 3.6 and earlier, dictionaries are not ordered.
 
@@ -52,3 +52,5 @@ for key in my_dict:
 ```
 
 Dictionaries are widely used in Python for tasks such as data storage, configuration settings, and efficient data retrieval based on keys. They provide a convenient and flexible way to organize and access data in your Python programs.
+
+
