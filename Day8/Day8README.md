@@ -7,3 +7,5 @@
 * ceil rounds up to the nearest integer, always moving towards positive infinity.
 * If you have a list of alphabets, you can use the index() {your_list.index(letter)} method to find the location of a specific letter. 
 * This only gives the index of the first occured item in the list.
+###### Modulo explained
+* https://www.freecodecamp.org/news/the-python-modulo-operator-what-does-the-symbol-mean-in-python-solved/
