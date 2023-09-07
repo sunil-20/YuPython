@@ -8,7 +8,7 @@ print(logo)
 chosen_word = random.choice(hangman_words.word_list)
 word_length = len(chosen_word)
 lives = 6
-#print(chosen_word)
+print(chosen_word)
 # create blank list
 display = []
 for l in range(word_length):
@@ -17,11 +17,16 @@ for l in range(word_length):
 end_of_game = False
 while not end_of_game:
     guess = input("What letter do you guess?\n").lower()
+# prompt for repeated guess.
+    if guess in display:
+        print(f"You've already guessed {guess}.")
+
     for position in range(word_length):
         letter = chosen_word[position]
         if letter == guess:
             display[position] = letter
-    if letter != guess:
+    if guess not in chosen_word:
+        print(f"You guessed {guess}, that's not in the word. So, you lose a life.")
         lives-=1
         print(f"Lives remaining: {lives}")
         if lives<1:
