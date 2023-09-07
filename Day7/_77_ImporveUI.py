@@ -1,8 +1,11 @@
 #Improve UI
 import random
-import stages
+import stages 
+# another way of importing // this is redundant but just to note.
+from stages import logo
 import hangman_words
-print(stages.logo)
+
+print(logo)
 chosen_word = random.choice(hangman_words.word_list)
 word_length = len(chosen_word)
 lives = 6
