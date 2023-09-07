@@ -1,8 +1,7 @@
 #Improve UI
 import random
-import stages 
 # another way of importing // this is redundant but just to note.
-from stages import logo
+from stages import logo, stages_fig
 import hangman_words
 
 print(logo)
@@ -37,4 +36,4 @@ while not end_of_game:
         end_of_game = True
         print("You win!")
         print(f"The word was: {''.join(display)}")
-    print(stages.stages_fig[lives])
+    print(stages_fig[lives])
