@@ -59,7 +59,17 @@ for value in my_dict.values():
     Key: [List],
     Key2: {Dict},
 }
+
+# updating a dictionary or appending a new dictionary
+
+dict1 = {'name': 'Alice', 'age': 30}
+dict2 = {'city': 'New York', 'age': 31}
+
+dict1.update(dict2)  # Append dict2 to dict1
+print(dict1)
+
 ```
+
 
 Dictionaries are widely used in Python for tasks such as data storage, configuration settings, and efficient data retrieval based on keys. They provide a convenient and flexible way to organize and access data in your Python programs.
 
