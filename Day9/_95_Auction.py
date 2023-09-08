@@ -7,7 +7,8 @@ print(art.logo)
 auction = True
 while auction:
     name = input("What is your name?\n")
-    bid = float(input("What is you bid amount?\n"))
+    bid = float(input("What is you bid amount? \n$ "))
+    # or you can directly add keys and values to bidders{dict}
     single_bidder = {}
     single_bidder[name] = bid
     bidders.update(single_bidder)
@@ -19,7 +20,7 @@ while auction:
 
         # separate the tuple to key and value pair
         max_key, max_value = highest_bid
-        print(f" The bidder with the largest value is '{max_key} with value of '{max_value}")
+        print(f" The bidder with the largest value is '{max_key}' with value of '{max_value}' ")
 
 
 
