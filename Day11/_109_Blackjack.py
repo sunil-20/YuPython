@@ -31,9 +31,9 @@ print(f"Opponents total: {opponents_total}")
 
 # Dealer's additional drawing
 if dealers_total > 21:
-    print("Dealer busted.")
+    print("Dealer Busted.")
 elif dealers_total == 21:
-    print("Dealer's blackjack")
+    print("Dealer's Blackjack")
 else:
     shall_draw = input("Do you want to draw more cards? y or n").lower()
     if shall_draw == 'y':
@@ -45,4 +45,22 @@ else:
     else:
         print(f"Dealers cards: {dealers_cards}")
         print(f" Dealers total: {dealers_total}")
+
+# Opponent's additional drawing
+if opponents_total > 21:
+    print("Opponent Busted!")
+elif opponents_total == 21:
+    print("Opponent's Blackjack")
+else:
+    shall_draw_opp = input("Do you want to draw more cards? y or n").lower()
+    if shall_draw_opp == 'y':
+        new_card_opp_re1 = random.choice(cards)
+        opponents_cards.append(new_card_opp_re1)
+        opponents_total += new_card_opp_re1
+        print(f"Opponents cards: {opponents_cards}")
+        print(f"Opponents total: {opponents_total}")
+    else:
+        print(f"Opponents cards: {opponents_cards}")
+        print(f"Opponents total: {opponents_total}")
+
 
