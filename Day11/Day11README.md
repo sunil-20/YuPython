@@ -56,7 +56,7 @@ These are some of the fundamental list methods in Python. You can use these meth
 # Create a list
 my_list = [3, 1, 4, 1, 5, 9, 2, 6, 5, 3]
 
-###### Append an element to the end of the list
+### Append an element to the end of the list
 my_list.append(7)
 print(my_list)  # Output: [3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 7]
 
