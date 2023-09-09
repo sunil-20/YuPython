@@ -28,3 +28,21 @@ while opponents_draw:
         opponents_draw = False
 print( f"Opponents cards: {opponents_cards}")
 print(f"Opponents total: {opponents_total}")
+
+# Dealer's additional drawing
+if dealers_total > 21:
+    print("Dealer busted.")
+elif dealers_total == 21:
+    print("Dealer's blackjack")
+else:
+    shall_draw = input("Do you want to draw more cards? y or n").lower()
+    if shall_draw == 'y':
+        new_card_re1 = random.choice(cards)
+        dealers_cards.append(new_card_re1)
+        dealers_total += new_card_re1
+        print(f"Dealers cards: {dealers_cards}")
+        print(f" Dealers total: {dealers_total}")
+    else:
+        print(f"Dealers cards: {dealers_cards}")
+        print(f" Dealers total: {dealers_total}")
+
