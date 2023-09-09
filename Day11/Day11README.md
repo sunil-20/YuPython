@@ -52,28 +52,49 @@ In Python, lists are a commonly used data structure, and they come with a variet
 12. `len(list)`: Returns the number of elements in the list.
 
 These are some of the fundamental list methods in Python. You can use these methods to manipulate and work with lists effectively in your Python programs.
-In Python, lists are a commonly used data structure, and they come with a variety of built-in methods for performing operations on them. Here are some of the main list methods in Python:
+# Examples
+# Create a list
+my_list = [3, 1, 4, 1, 5, 9, 2, 6, 5, 3]
 
-1. `append(x)`: Adds an element `x` to the end of the list.
+# Append an element to the end of the list
+my_list.append(7)
+print(my_list)  # Output: [3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 7]
 
-2. `extend(iterable)`: Extends the list by appending elements from the iterable (e.g., another list).
+# Extend the list with another list
+extension = [8, 9, 10]
+my_list.extend(extension)
+print(my_list)  # Output: [3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 7, 8, 9, 10]
 
-3. `insert(i, x)`: Inserts element `x` at the specified index `i`.
+# Insert an element at a specific index
+my_list.insert(0, 0)
+print(my_list)  # Output: [0, 3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 7, 8, 9, 10]
 
-4. `remove(x)`: Removes the first occurrence of element `x` from the list.
+# Remove the first occurrence of a value
+my_list.remove(5)
+print(my_list)  # Output: [0, 3, 1, 4, 1, 9, 2, 6, 5, 3, 7, 8, 9, 10]
 
-5. `pop([i])`: Removes and returns the element at index `i`. If `i` is not specified, it removes and returns the last element.
+# Remove and return an element by index
+popped_value = my_list.pop(2)
+print("Popped value:", popped_value)
+print(my_list)  # Output: Popped value: 1
+                #         [0, 3, 4, 1, 9, 2, 6, 5, 3, 7, 8, 9, 10]
 
-6. `index(x[, start[, end]])`: Returns the index of the first occurrence of element `x` (optionally within a specified range).
+# Find the index of a value
+index = my_list.index(3)
+print("Index of 3:", index)  # Output: Index of 3: 1
 
-7. `count(x)`: Returns the number of occurrences of element `x` in the list.
+# Count the number of occurrences of a value
+count = my_list.count(9)
+print("Count of 9:", count)  # Output: Count of 9: 2
 
-8. `sort(key=None, reverse=False)`: Sorts the list in ascending order (or descending if `reverse=True` is specified). You can provide a custom sorting key function using the `key` parameter.
+# Sort the list in ascending order
+my_list.sort()
+print(my_list)  # Output: [0, 1, 2, 3, 3, 4, 5, 6, 7, 8, 9, 9, 10]
 
-9. `reverse()`: Reverses the elements of the list in place.
+# Reverse the list
+my_list.reverse()
+print(my_list)  # Output: [10, 9, 9, 8, 7, 6, 5, 4, 3, 3, 2, 1, 0]
 
-10. `copy()`: Returns a shallow copy of the list.
-
-11. `clear()`: Removes all elements from the list.
-
-12. `len(list)`: Returns the number of elements in the list.
+# Get the length of the list
+length = len(my_list)
+print("Length of the list:", length)  # Output: Length of the list: 13
