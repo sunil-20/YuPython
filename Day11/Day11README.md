@@ -52,49 +52,49 @@ In Python, lists are a commonly used data structure, and they come with a variet
 12. `len(list)`: Returns the number of elements in the list.
 
 These are some of the fundamental list methods in Python. You can use these methods to manipulate and work with lists effectively in your Python programs.
-# Examples
-# Create a list
+## Examples
+## Create a list
 my_list = [3, 1, 4, 1, 5, 9, 2, 6, 5, 3]
 
 ### Append an element to the end of the list
 my_list.append(7)
 print(my_list)  # Output: [3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 7]
 
-###### Extend the list with another list
+### Extend the list with another list
 extension = [8, 9, 10]
 my_list.extend(extension)
 print(my_list)  # Output: [3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 7, 8, 9, 10]
 
-###### Insert an element at a specific index
+### Insert an element at a specific index
 my_list.insert(0, 0)
 print(my_list)  # Output: [0, 3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 7, 8, 9, 10]
 
-# Remove the first occurrence of a value
+### Remove the first occurrence of a value
 my_list.remove(5)
 print(my_list)  # Output: [0, 3, 1, 4, 1, 9, 2, 6, 5, 3, 7, 8, 9, 10]
 
-###### Remove and return an element by index
+### Remove and return an element by index
 popped_value = my_list.pop(2)
 print("Popped value:", popped_value)
 print(my_list)  # Output: Popped value: 1
                 #         [0, 3, 4, 1, 9, 2, 6, 5, 3, 7, 8, 9, 10]
 
-###### Find the index of a value
+### Find the index of a value
 index = my_list.index(3)
 print("Index of 3:", index)  # Output: Index of 3: 1
 
-###### Count the number of occurrences of a value
+### Count the number of occurrences of a value
 count = my_list.count(9)
 print("Count of 9:", count)  # Output: Count of 9: 2
 
-###### Sort the list in ascending order
+### Sort the list in ascending order
 my_list.sort()
 print(my_list)  # Output: [0, 1, 2, 3, 3, 4, 5, 6, 7, 8, 9, 9, 10]
 
-###### Reverse the list
+### Reverse the list
 my_list.reverse()
 print(my_list)  # Output: [10, 9, 9, 8, 7, 6, 5, 4, 3, 3, 2, 1, 0]
 
-###### Get the length of the list
+### Get the length of the list
 length = len(my_list)
 print("Length of the list:", length)  # Output: Length of the list: 13
