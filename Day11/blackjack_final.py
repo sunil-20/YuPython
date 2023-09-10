@@ -29,4 +29,23 @@ def compare(user_score, computer_score):
         return("You lose >21")
     elif computer_score > 21:
         return " You win opponent"
+    elif user_score > computer_score:
+        return "You win"
+    else:
+        return "You lose"
     
+def play_game():
+
+    print(logo)
+
+    user_cards = []
+    computer_cards = []
+    game_over = False
+
+    for i in range(2):
+        user_cards.append(deal_card())
+        computer_cards.append(deal_card())
+    while not game_over:
+        user_score = calculate_score(user_cards)
+        computer_score = calculate_score(computer_cards)
+        print(f" Your cards: {user_cards}, current score")
