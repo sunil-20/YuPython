@@ -1,5 +1,7 @@
 # Blackjack capstone
 import random
+from art import logo
+print(logo)
 cards = [11, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10]
 # dealing with dealers cards.
 dealers_cards = []
