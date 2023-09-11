@@ -15,6 +15,7 @@ def guess_me():
         else:
             total_try += 5
         print(total_try)
+        game_stop = False
         while not game_stop:
             guess = int(input("What number do you guess?: "))
             total_try-=1
@@ -22,8 +23,10 @@ def guess_me():
                 print(f"You guessed too high. \n You have {total_try} attempts remaining.")
             elif guess == number:
                 print(f"You guessed corret!")
+                game_stop = True
             else:
                 print(f"You guessed too low. \n You have {total_try} remaining.")
             if total_try ==0:
+                print("You run out of guesses, you lose!")
                 game_stop = True
 guess_me()
