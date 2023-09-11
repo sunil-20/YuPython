@@ -6,7 +6,7 @@ def guess_me():
         print("Welcome to the number guessing game")
         print("I am thinking a number between 1 and 50")
         number = random.randint(1, 50) # a and b inclusive
-        print(f"The guessed number is: {number}.")
+        #print(f"The guessed number is: {number}.")
         total_try = 0
         if input("Which level do you want to play? 'easy' or 'hard'? ").lower()=='easy':
             total_try += 10
@@ -23,7 +23,7 @@ def guess_me():
                 print(f"You guessed corret!")
                 game_stop = True
             else:
-                print(f"You guessed too low. \nYou have {total_try} remaining.")
+                print(f"You guessed too low. \nYou have {total_try} attempts remaining.")
 
             # last attempt condition
             if total_try ==0 and guess != number:
