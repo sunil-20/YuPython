@@ -66,3 +66,6 @@ Now, let's expand the scenario to your neighborhood:
 - However, you can't bring the whole garden into your kitchen (local scope). Instead, you pick some apples from the garden and bring them into your kitchen to use them in your sandwich-making task.
 
 In summary, local scope is like the specific area where you're working on a task (e.g., your kitchen for making a sandwich), and global scope is like a larger area where things are accessible from various places (e.g., your neighborhood's shared garden with apples). Variables (ingredients/tools) in a local scope are specific to the task at hand, while global variables can be accessed from different parts of the program (or neighborhood).
+
+* Name space is valid in certain scope. 
+* There is no Block Scope

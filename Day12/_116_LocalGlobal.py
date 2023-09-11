@@ -29,3 +29,14 @@ def pick_apples():
   return picked_apples
 print(f"Global apple counts: {apples_picked}")
 pick_apples()
+
+game_level = 3
+def create_enemy():
+  enemies = ["Tiger","Lion","Alien"]
+  if game_level <5:
+    new_enemy = enemies[0]
+    print(new_enemy)
+    """
+print(new_enemy) # not printed because of local scope
+"""
+create_enemy()
