@@ -16,4 +16,16 @@ def  make_sandwich():
   mayonnaise = "Hellmans mayonnaise"
   print(f"Making a sandwich with {bread}, {cheese}, and {mayonnaise}.")
 make_sandwich()
+"""
 print(bread) # this will not be printed. Error
+"""
+# Global scope
+apple_tree = "apple tree in the shared garden"
+apples_picked = 4
+def pick_apples():
+  # local variable
+  picked_apples = 3
+  print(f"Picked {picked_apples} apples from the {apple_tree}.")
+  return picked_apples
+print(f"Global apple counts: {apples_picked}")
+pick_apples()
