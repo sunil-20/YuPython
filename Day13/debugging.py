@@ -1,17 +1,32 @@
 ############DEBUGGING#####################
 
 # Describe Problem
-def my_function():
-  for i in range(1, 20):
-    if i == 20:
-      print("You got it")
-my_function()
+# def my_function():
+#   for i in range(1, 20):
+#     if i == 20:
+#       print("You got it")
+# my_function()
+
+# solution range changed to 21
+# def my_function():
+#   for i in range(1, 21):
+#     if i == 20:
+#       print("You got it")
+# my_function()
 
 # # Reproduce the Bug
 # from random import randint
 # dice_imgs = ["❶", "❷", "❸", "❹", "❺", "❻"]
 # dice_num = randint(1, 6)
 # print(dice_imgs[dice_num])
+
+#solution the range is out of range (6)
+# randint is inclusive(1,6)
+# change the 6 to 5 as a solution
+from random import randint
+dice_imgs = ["❶", "❷", "❸", "❹", "❺", "❻"]
+dice_num = randint(1, 5)
+print(dice_imgs[dice_num])
 
 # # Play Computer
 # year = int(input("What's your year of birth?"))
