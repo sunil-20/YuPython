@@ -20,13 +20,14 @@
 # dice_num = randint(1, 6)
 # print(dice_imgs[dice_num])
 
-#solution the range is out of range (6)
+
+#Solution, The index value 6 is out of range
 # randint is inclusive(1,6)
-# change the 6 to 5 as a solution
-from random import randint
-dice_imgs = ["❶", "❷", "❸", "❹", "❺", "❻"]
-dice_num = randint(1, 5)
-print(dice_imgs[dice_num])
+# change the number 6 to 5 as a solution
+# from random import randint
+# dice_imgs = ["❶", "❷", "❸", "❹", "❺", "❻"]
+# dice_num = randint(0, 5)
+# print(dice_imgs[dice_num])
 
 # # Play Computer
 # year = int(input("What's your year of birth?"))
@@ -35,10 +36,27 @@ print(dice_imgs[dice_num])
 # elif year > 1994:
 #   print("You are a Gen Z.")
 
-# # Fix the Errors
+#solution, play computer
+#problem: 1994 has not been catched by if elif block.
+# year = int(input("What's your year of birth?"))
+# if year > 1980 and year <= 1994:
+#   print("You are a millenial.")
+# elif year > 1994:
+#   print("You are a Gen Z.")
+
+# Fix the Errors
 # age = input("How old are you?")
 # if age > 18:
 # print("You can drive at age {age}.")
+
+# Solution, Fix the Errors
+#problem: indentation error, type error, f string missing, else statement missing to capture
+# age <18.
+age = int(input("How old are you?"))
+# if age >= 18:
+#     print(f"You can drive at age {age}.")
+# else:
+#     print(f"You can't drive at age {age}.")
 
 # #Print is Your Friend
 # pages = 0
@@ -47,6 +65,14 @@ print(dice_imgs[dice_num])
 # word_per_page == int(input("Number of words per page: "))
 # total_words = pages * word_per_page
 # print(total_words)
+
+# #Solution, Print is Your Friend
+pages = 0
+word_per_page = 0
+pages = int(input("Number of pages: "))
+word_per_page == int(input("Number of words per page: "))
+total_words = pages * word_per_page
+print(total_words)
 
 # #Use a Debugger
 # def mutate(a_list):
