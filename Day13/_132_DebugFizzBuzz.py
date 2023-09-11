@@ -12,6 +12,8 @@ for number in range(1, 101):
     """
 
 # solution
+#problem: or is used to make true any one side is True, 
+# and is for both side true.
 for number in range(1, 101):
   if number % 3 == 0 and number % 5 == 0:
     print("FizzBuzz")
