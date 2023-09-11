@@ -5,16 +5,19 @@ print(art.logo)
 
 def high_low():
     compare_a = random.choice(game_data.data)
-    #followers_a = compare_a['follower_count']
-    #print(f"Compare A: {compare_a['name']}, {compare_a['description']}, from {compare_a['country']}")
-    print(art.vs)
     game_over = False
     score = 0
     while not game_over:
         compare_a = compare_a
+        compare_b = random.choice(game_data.data)
+        while compare_a == compare_b:
+            compare_b = random.choice(game_data.data)
+
         followers_a = compare_a['follower_count']
         print(f"Compare A: {compare_a['name']}, {compare_a['description']}, from {compare_a['country']}")
-        compare_b = random.choice(game_data.data)
+       
+        print(art.vs)
+        
         followers_b = compare_b['follower_count']
         print(f"Against B: {compare_b['name']}, {compare_b['description']}, from {compare_b['country']}")
         #user input for  a or b
