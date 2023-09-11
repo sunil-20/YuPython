@@ -24,10 +24,12 @@ def guess_me():
                 game_stop = True
             else:
                 print(f"You guessed too low. \nYou have {total_try} remaining.")
+
+            # last attempt condition
             if total_try ==0 and guess != number:
-                print("You run out of guesses! You lose")
+                print("You run out of guesses! You lose!")
                 game_stop = True
             elif total_try == 0 and guess == number:
-                 print("You ran out of the guesses but you win at the very end!")
+                 print("You ran out of the guesses but you won at the very end!")
                  game_stop = True
 guess_me()
