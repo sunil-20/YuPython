@@ -7,3 +7,15 @@ SHAPE = "Circle"
 
 def calc():
     TWITTER_HANDLE
+# from quiz
+#n Python there is no block scope.
+#  Inside a if/else/for/while code block is the same as outside it.
+def bar():
+    my_variable = 9
+ 
+    if 16 > 9:
+      my_variable = 16
+ 
+    print(my_variable)
+ 
+bar()
