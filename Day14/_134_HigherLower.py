@@ -20,8 +20,8 @@ def high_low():
         
         followers_b = compare_b['follower_count']
         print(f"Against B: {compare_b['name']}, {compare_b['description']}, from {compare_b['country']}")
-        #user input for  a or b
-        a_or_b = input("Who has more followers? 'A' or 'B'").lower()
+        # user input for  a or b
+        a_or_b = input("Who has more followers? 'A' or 'B': ").lower()
         if a_or_b == 'a' and followers_a > followers_b:
             score +=1
             print(f"Your guessed right, your score is: {score}")
