@@ -35,7 +35,5 @@ change = total_fund - coffee_price
 if total_fund < coffee_price:
     print("You have insufficient fund to brew the coffee!")
 else:
-    print(f"Here is your change {change} ")
-    print("Enjoy the coffee")
-print(total_fund)
-print(coffee_type)
+    print(f"You have sufficient fund to brew {coffee_type}. Here is your change {change}.\n Enjoy the coffee!")
+# print(total_fund)
