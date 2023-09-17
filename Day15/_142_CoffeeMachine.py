@@ -20,25 +20,36 @@ print(f"Price of {coffee_type.title()} is: {coffee_price}")
 
 total_dollar_fund = 0
 
+rebrew_coffee = True
+while rebrew_coffee:
 
-def coin_insert():
-    print("Please insert coins.")
-    global total_dollar_fund
-    quarters = int(input("How many quarters?: "))
-    dimes = int(input("How many dimes?: "))
-    nickles = int(input("How many nickles?: "))
-    pennies = int(input("How many pennies?: "))
-    total_dollar = quarters * 0.25 + dimes * 0.10 + nickles * 0.05 + pennies * 0.01
-    total_dollar_fund = total_dollar
-    #  total_dollar
+    def coin_insert():
+        print("Please insert coins.")
+        global total_dollar_fund
+        global rebrew_coffee
+        quarters = int(input("How many quarters?: "))
+        dimes = int(input("How many dimes?: "))
+        nickles = int(input("How many nickles?: "))
+        pennies = int(input("How many pennies?: "))
+        total_dollar = quarters * 0.25 + dimes * 0.10 + nickles * 0.05 + pennies * 0.01
+        total_dollar_fund = total_dollar
+        #  total_dollar
 
-    change = round(total_dollar_fund - coffee_price, 2)
-    if total_dollar_fund < coffee_price:
-        print("You have insufficient fund to brew the coffee!")
-        insert_coin = input("Do you want to insert more coins? 'yes' or 'no'.")
-        if insert_coin == "yes":
-            coin_insert()
+        change = round(total_dollar_fund - coffee_price, 2)
+        if total_dollar_fund < coffee_price:
+            print("You have insufficient fund to brew the coffee!")
+            insert_coin = input("Do you want to insert more coins? 'yes' or 'no'.")
+            if insert_coin == "yes":
+                coin_insert()
 
-    else:
-        print(f"You have sufficient fund to brew {coffee_type}. Here is your change: {change}.\n Enjoy the coffee!")
-coin_insert()
+        else:
+            print(f"You have sufficient fund to brew {coffee_type}. Here is your change: {change}.\n Enjoy the coffee!")
+            rebrew = input("Yes or No").lower()
+            if rebrew == "no":
+                rebrew_coffee = False
+            else:
+                rebrew_coffee = True
+
+    coin_insert()
+
+# coin_insert()
