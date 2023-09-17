@@ -51,5 +51,3 @@ while rebrew_coffee:
                 rebrew_coffee = True
 
     coin_insert()
-
-# coin_insert()
