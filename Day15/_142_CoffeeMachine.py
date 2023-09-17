@@ -32,7 +32,7 @@ def coin_insert():
     total_dollar_fund = total_dollar
     #  total_dollar
 
-    change = total_dollar_fund - coffee_price
+    change = round(total_dollar_fund - coffee_price, 2)
     if total_dollar_fund < coffee_price:
         print("You have insufficient fund to brew the coffee!")
         insert_coin = input("Do you want to insert more coins? 'yes' or 'no'.")
@@ -40,5 +40,5 @@ def coin_insert():
             coin_insert()
 
     else:
-        print(f"You have sufficient fund to brew {coffee_type}. Here is your change {change}.\n Enjoy the coffee!")
+        print(f"You have sufficient fund to brew {coffee_type}. Here is your change: {change}.\n Enjoy the coffee!")
 coin_insert()
