@@ -80,4 +80,6 @@ So, a class is like a recipe for creating objects with predefined properties and
 * Turtle resource: https://docs.python.org/3/library/turtle.html
 * Turtle color: https://cs111.wellesley.edu/reference/colors
 
-
+#### Python Modules
+* pypi: https://pypi.org/project/prettytable/
+* 
