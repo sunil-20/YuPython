@@ -76,3 +76,8 @@ Once you have this blueprint (class), you can use it to create multiple objects 
 
 So, a class is like a recipe for creating objects with predefined properties and behaviors, helping you organize and manage your code in a structured way.
 
+#### Turtle module
+* Turtle resource: https://docs.python.org/3/library/turtle.html
+* Turtle color: https://cs111.wellesley.edu/reference/colors
+
+
