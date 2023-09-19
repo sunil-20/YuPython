@@ -126,3 +126,41 @@ In Python, instance variables and class variables are two different types of var
    In this example, `pi` is a class variable, and all instances of the `Circle` class share the same value of `pi`.
 
 In summary, the main differences between instance variables and class variables in Python are their scope and purpose. Instance variables are specific to each instance of a class and hold data related to that instance's state, while class variables are shared among all instances of a class and are used for storing data that is common to the class itself.
+
+#### Why use of Self keyword is helpful
+In Python, when you define instance variables within a class, it's a common practice to initialize them within the class's constructor method (usually named `__init__`) and associate them with the `self` keyword. This practice has several reasons and benefits:
+
+1. **Instance Ownership:** By initializing variables with `self`, you explicitly associate them with the instance of the class. This means that each instance of the class will have its own set of these variables, and they won't interfere with variables of the same name in other instances. This is crucial for encapsulation and maintaining the state of individual objects.
+
+2. **Access to Attributes:** Initializing instance variables with `self` allows you to access and modify those attributes throughout the class's methods. Without `self`, you wouldn't be able to access these variables outside of the `__init__` method.
+
+3. **Clarity and Convention:** Using `self` is a widely accepted convention in Python. When someone reads your code, it's immediately clear that you are dealing with instance variables. It also helps distinguish instance variables from local variables within methods.
+
+4. **Default Values:** You can provide default values for instance variables during initialization. This ensures that even if a value is not explicitly provided when creating an instance, the variable will have a meaningful default value.
+
+Here's an example to illustrate these points:
+
+```python
+class Person:
+    def __init__(self, name, age=0):
+        # Initializing instance variables with self
+        self.name = name
+        self.age = age
+
+    def celebrate_birthday(self):
+        # Accessing instance variables within a method
+        self.age += 1
+
+# Creating instances of the Person class
+person1 = Person("Alice", 30)
+person2 = Person("Bob")
+
+# Accessing and modifying instance variables
+print(person1.name)  # "Alice"
+print(person1.age)   # 30
+
+person2.celebrate_birthday()
+print(person2.age)   # 1 (default age value incremented)
+```
+
+In this example, `self.name` and `self.age` are instance variables initialized within the `__init__` method. They belong to each instance of the `Person` class and can be accessed and modified using the `self` keyword.
