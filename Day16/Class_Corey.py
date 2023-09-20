@@ -4,8 +4,10 @@
 # Create blueprient name = Employeefor creating instances.
 class Employee:
     pass
-    emp_1 = Employee()
-    emp_2 = Employee()
+
+
+emp_1 = Employee()  # unique instance of the Employee class
+emp_2 = Employee()  # unique instance of the Employee class
 
 print(emp_1)
 print(emp_2)
