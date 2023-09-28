@@ -1,7 +1,6 @@
 # Day 17 notes 
 PascalCase, camelCase, snake_case
 #### Simplifying the return statement without if else.
-or
 ``` python
 if a > b:
  return True
