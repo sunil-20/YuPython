@@ -1,5 +1,5 @@
 #### Turtle Notes
-* https://docs.python.org/3/library/turtle.html
+* https://docs.python.org/3/library/turtle.html <br>
 When working with Python and importing modules, there are various techniques and terms to be aware of. Here are some major notes on importing modules in Python, including the use of `from`, aliasing, and other related concepts:
 
 1. Importing Modules:
