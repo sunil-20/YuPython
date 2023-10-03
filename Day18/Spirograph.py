@@ -14,7 +14,7 @@ def random_color():
     return color
 
 
-timmy.pencolor(random_color()) # call the function which return color rgb attribute to pass through the pencolor.
+timmy.pencolor(random_color()) # call the function which return rgb attribute to pass through the pencolor.
 timmy.speed("fastest")
 timmy.circle(100)
 
