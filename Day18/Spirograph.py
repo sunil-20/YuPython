@@ -14,9 +14,15 @@ def random_color():
     return color
 
 
-timmy.pencolor(random_color()) # call the function which return rgb attribute to pass through the pencolor.
+# timmy.pencolor(random_color()) # call the function which return rgb attribute to pass through the pencolor.
 timmy.speed("fastest")
-timmy.circle(100)
+b = int(input("Your degree"))
+for i in range(0, 360, b):
+    timmy.pencolor(random_color())
+    current_heading = timmy.heading()
+    timmy.setheading(current_heading + b)
+    timmy.circle(100)
+
 
 screen = turtle.Screen()
 screen.exitonclick()
