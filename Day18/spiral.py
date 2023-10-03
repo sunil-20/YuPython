@@ -1,7 +1,8 @@
 # Draw a Spirograph
+import turtle
 from turtle import Turtle, Screen
 import random
-import turtle
+
 timmy = Turtle()
 turtle.colormode(255)
 
@@ -13,7 +14,8 @@ def random_color():
     color = (r, g, b)
     return color
 
-timmy.speed("fastest")
+
+timmy.speed(1)
 timmy.circle(100)
 
 screen = Screen()

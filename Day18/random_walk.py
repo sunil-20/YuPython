@@ -12,14 +12,5 @@ for _ in range(300):
     timmy.forward(30)
     timmy.setheading(random.choice(direction))
 
-
-
-
-
-
-
-
-
-
 screen = Screen()
 screen.exitonclick()
