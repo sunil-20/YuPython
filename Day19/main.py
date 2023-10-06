@@ -13,6 +13,8 @@ def move_backward():
     tim.backward(50)
 def counter_clock():
     tim.left(50)
+def clock():
+    tim.right(50)
 
 def clear_screen():
     tim.penup()
@@ -26,6 +28,7 @@ screen.onkey(key = "w", fun = move_forward)
 screen.onkey(key = "s", fun = move_backward)
 screen.onkey(key = "a", fun = counter_clock)
 screen.onkey(key = "c", fun = clear_screen)
+screen.onkey(key = "d", fun = clock)
 
 
 
