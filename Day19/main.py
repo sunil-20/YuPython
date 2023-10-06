@@ -18,6 +18,8 @@ def clear_screen():
     tim.penup()
     tim.clear()
     tim.home()
+    screen.listen()
+    tim.pendown()
     
 screen.listen()
 screen.onkey(key = "w", fun = move_forward)
