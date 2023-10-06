@@ -13,6 +13,7 @@ def move_forward():
     jim.forward(random.randint(10, 20))
     kelly.forward(random.randint(10, 20))
     miya.forward(random.randint(10, 20))
+    screen.exitonclick()
 
 move_forward()
 
