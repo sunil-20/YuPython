@@ -11,20 +11,12 @@ screen.tracer(0)
 r_paddle = Paddle((350, 0))
 l_paddle = Paddle((-350, 0))
 
-
-def go_up():
-    new_y = paddle.ycor()+ 20
-    paddle.goto(paddle.xcor(), new_y)
-
-def go_down():
-    new_y = paddle.ycor() - 20
-    paddle.goto(paddle.xcor(), new_y)
-
+# listen to keystroke
 screen.listen()
-screen.onkey(go_up, "Up")
-screen.onkey(go_down, "Down")
-
-
+screen.onkey(r_paddle.go_up, "Up")
+screen.onkey(r_paddle.go_down, "Down")
+screen.onkey(l_paddle.go_up, "W")
+screen.onkey(l_paddle.go_down, "S")
 
 game_is_on = True
 while game_is_on:
