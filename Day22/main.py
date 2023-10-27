@@ -11,7 +11,7 @@ screen.tracer(0)
 
 r_paddle = Paddle((350, 0))
 l_paddle = Paddle((-350, 0))
-ball = Ball()
+ball = Ball() # initialize ball object
 
 # listen to keystroke
 screen.listen()
